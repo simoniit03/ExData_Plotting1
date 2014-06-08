@@ -32,7 +32,7 @@ plot(twoDaysPowerConsumtion$Date_time,twoDaysPowerConsumtion$Global_active_power
 plot(twoDaysPowerConsumtion$Date_time,twoDaysPowerConsumtion$Sub_metering_1,type="l",xlab="",ylab="Energy sub metering")
 lines(twoDaysPowerConsumtion$Date_time,twoDaysPowerConsumtion$Sub_metering_2,col="red")
 lines(twoDaysPowerConsumtion$Date_time,twoDaysPowerConsumtion$Sub_metering_3,col="blue")
-legend("topright",lty=1,col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_2"))
+legend("topright",lty=1,box.lty=0, col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_2"))
 
 ### Displaying the third plot
 plot(twoDaysPowerConsumtion$Date_time,twoDaysPowerConsumtion$Voltage,type="l",xlab="datetime",ylab="Voltage")
